@@ -12,5 +12,5 @@ provider "google" {
   project     = var.project
   region      = var.region
   zone        = var.zone
-  credentials = file("${path.module}/gcp.json")
+  credentials = file(var.gcp_credentials)
 }
