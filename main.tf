@@ -13,10 +13,4 @@ resource "google_compute_instance" "vm_instance" {
     network = "default"
     access_config {}  # Assigns a public IP
   }
-
-  tags = ["web", "dev"]
-
-  metadata = {
-    ssh-keys = "jenkins:${file("~/.ssh/id_rsa.pub")}"
-  }
 }
