@@ -35,3 +35,9 @@ variable "image_project" {
   type        = string
   default     = "debian-cloud"
 }
+
+variable "gcp_credentials" {
+  type        = string
+  description = "Path to GCP credentials JSON"
+}
+
